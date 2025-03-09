@@ -4068,6 +4068,42 @@ Output: "This is a sentence"
 Explanation: Sort the words in s to their original positions "This1 is2 a3 sentence4", then remove the numbers
 ```
 
+### [Problem 1869. Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/)
+
+solution: [problem_1869.py](./problem_1869.py)
+
+Given a binary string s, return true if the longest contiguous segment of 1's is strictly longer than the longest contiguous segment of 0's in s, or return false otherwise.
+
+For example, in s = "110100010" the longest continuous segment of 1s has length 2, and the longest continuous segment of 0s has length 3.
+Note that if there are no 0's, then the longest continuous segment of 0's is considered to have a length 0. The same applies if there is no 1's.
+
+```
+Example 1:
+
+Input: s = "1101"
+Output: true
+Explanation:
+The longest contiguous segment of 1s has length 2: "1101"
+The longest contiguous segment of 0s has length 1: "1101"
+The segment of 1s is longer, so return true.
+Example 2:
+
+Input: s = "111000"
+Output: false
+Explanation:
+The longest contiguous segment of 1s has length 3: "111000"
+The longest contiguous segment of 0s has length 3: "111000"
+The segment of 1s is not longer, so return false.
+Example 3:
+
+Input: s = "110100010"
+Output: false
+Explanation:
+The longest contiguous segment of 1s has length 2: "110100010"
+The longest contiguous segment of 0s has length 3: "110100010"
+The segment of 1s is not longer, so return false.
+```
+
 ### [Problem 1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/)
 
 There are n students in a class numbered from 0 to n - 1. The teacher will give each student a problem starting with the student number 0, then the student number 1, and so on until the teacher reaches the student number n - 1. After that, the teacher will restart the process, starting with the student number 0 again.
