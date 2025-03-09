@@ -3490,6 +3490,25 @@ Output: 4
 Explanation: The triplets are (0,1,2), (0,2,2), (2,3,4) and (2,4,4)
 ```
 
+### [Problem 1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)
+
+The power of the string is the maximum length of a non-empty substring that contains only one unique character.
+
+Given a string s, return the power of s.
+
+```
+Example 1:
+
+Input: s = "leetcode"
+Output: 2
+Explanation: The substring "ee" is of length 2 with the character 'e' only.
+Example 2:
+
+Input: s = "abbcccddddeeeeedcba"
+Output: 5
+Explanation: The substring "eeeee" is of length 5 with the character 'e' only.
+```
+
 ### [Problem 1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
 
 Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.
