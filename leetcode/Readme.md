@@ -1973,6 +1973,23 @@ Output: 0
 Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0
 ```
 
+### [Problem 485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
+
+solution: [problem_485.](./problem_485.py)
+Given a binary array nums, return the maximum number of consecutive 1's in the array.
+
+```
+Example 1:
+
+Input: nums = [1,1,0,1,1,1]
+Output: 3
+Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.
+Example 2:
+
+Input: nums = [1,0,1,1,0,1]
+Output: 2
+``` 
+
 ### [Problem 506. Relative Ranks](https://leetcode.com/problems/relative-ranks/)
 
 Given an integer array score of size n, return the relative ranks of the athletes. The relative ranks are the positions of the athletes in the leaderboard.
