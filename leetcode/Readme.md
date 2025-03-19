@@ -4707,6 +4707,31 @@ Explanation: The root node is the node with value 50 since it has no parent.
 The resulting binary tree is shown in the diagram
 ```
 
+### [Problem 2206. Divide Array Into Equal Pairs] (https://leetcode.com/problems/divide-array-into-equal-pairs/description/)
+You are given an integer array nums consisting of 2 * n integers.
+
+You need to divide nums into n pairs such that:
+
+Each element belongs to exactly one pair.
+The elements present in a pair are equal.
+Return true if nums can be divided into n pairs, otherwise return false.
+
+```
+Example 1:
+
+Input: nums = [3,2,3,2,2,2]
+Output: true
+Explanation: 
+There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs.
+If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.
+Example 2:
+
+Input: nums = [1,2,3,4]
+Output: false
+Explanation: 
+There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.
+```
+
 ### [Problem: 2220. (Easy): Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/)
 
 A bit flip of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.
@@ -5721,6 +5746,42 @@ Output: true
 Explanation:
 There is only one element. So the answer is true.
 ```
+
+### [Problem 3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description) 
+
+You are given a binary array nums.
+
+You can do the following operation on the array any number of times (possibly zero):
+
+Choose any 3 consecutive elements from the array and flip all of them.
+Flipping an element means changing its value from 0 to 1, and from 1 to 0.
+
+Return the minimum number of operations required to make all elements in nums equal to 1. If it is impossible, return -1.
+
+```
+
+Example 1:
+
+Input: nums = [0,1,1,1,0,0]
+
+Output: 3
+
+Explanation:
+We can do the following operations:
+
+Choose the elements at indices 0, 1 and 2. The resulting array is nums = [1,0,0,1,0,0].
+Choose the elements at indices 1, 2 and 3. The resulting array is nums = [1,1,1,0,0,0].
+Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,1,1,1].
+Example 2:
+
+Input: nums = [0,1,1,1]
+
+Output: -1
+
+Explanation:
+It is impossible to make all elements equal to 1.
+```
+
 
 ### [Problem 3208. Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/description/)
 
