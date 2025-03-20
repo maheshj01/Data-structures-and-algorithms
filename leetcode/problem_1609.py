@@ -24,7 +24,7 @@ class Solution:
         q.append(root)
         while(True):
             size = len(q)
-            levelArr = []
+            prev = -1
             while(size > 0):
                 top = q.popleft()
                 if(top.left):
@@ -36,11 +36,11 @@ class Solution:
                     or (level % 2 != 0 and top.val % 2 != 0)):
                     result = False
                     return result
-                if(len(levelArr) > 0):
-                    if((level % 2 == 0 and levelArr[-1] >= top.val) or
-                    (level % 2 != 0 and levelArr[-1] <= top.val)):
+                if(prev != -1):
+                    if((level % 2 == 0 and prev >= top.val) or
+                    (level % 2 != 0 and prev <= top.val)):
                         return False
-                levelArr.append(top.val)
+                prev = top.val
             level += 1
             if(len(q) == 0):
                 break
