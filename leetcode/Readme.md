@@ -3807,6 +3807,43 @@ Output: [[0,5,0],
          [2,0,8]
 ```
 
+### [Problem 1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)
+solution: [problem_1609.py](./problem_1609.py)
+tags: binary tree, bfs
+company: Meta
+
+A binary tree is named Even-Odd if it meets the following conditions:
+
+The root of the binary tree is at level index 0, its children are at level index 1, their children are at level index 2, etc.
+For every even-indexed level, all nodes at the level have odd integer values in strictly increasing order (from left to right).
+For every odd-indexed level, all nodes at the level have even integer values in strictly decreasing order (from left to right).
+Given the root of a binary tree, return true if the binary tree is Even-Odd, otherwise return false.
+
+![](https://assets.leetcode.com/uploads/2020/09/15/sample_1_1966.png)
+
+```
+Input: root = [1,10,4,3,null,7,9,12,8,6,null,null,2]
+Output: true
+Explanation: The node values on each level are:
+Level 0: [1]
+Level 1: [10,4]
+Level 2: [3,7,9]
+Level 3: [12,8,6,2]
+Since levels 0 and 2 are all odd and increasing and levels 1 and 3 are all even and decreasing, the tree is Even-Odd.
+```
+
+![](https://assets.leetcode.com/uploads/2020/09/15/sample_2_1966.png)
+
+```
+Input: root = [5,4,2,3,3,7]
+Output: false
+Explanation: The node values on each level are:
+Level 0: [5]
+Level 1: [4,2]
+Level 2: [3,3,7]
+Node values in level 2 must be in strictly increasing order, so the tree is not Even-Odd.
+```
+
 ### [Problem 1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)
 
 You are given two arrays rowSum and colSum of non-negative integers where rowSum[i] is the sum of the elements in the ith row and colSum[j] is the sum of the elements of the jth column of a 2D matrix. In other words, you do not know the elements of the matrix, but you do know the sums of each row and column.
