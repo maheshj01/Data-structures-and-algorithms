@@ -1988,7 +1988,7 @@ Example 2:
 
 Input: nums = [1,0,1,1,0,1]
 Output: 2
-``` 
+```
 
 ### [Problem 506. Relative Ranks](https://leetcode.com/problems/relative-ranks/)
 
@@ -3200,6 +3200,37 @@ Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
 ```
 
+### [Problem 1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)
+
+solution: [problem_1249](./problem_1249.kt)
+company: meta
+Given a string s of '(' , ')' and lowercase English characters.
+
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
+
+Formally, a parentheses string is valid if and only if:
+
+It is the empty string, contains only lowercase characters, or
+It can be written as AB (A concatenated with B), where A and B are valid strings, or
+It can be written as (A), where A is a valid string.
+
+```
+Example 1:
+
+Input: s = "lee(t(c)o)de)"
+Output: "lee(t(c)o)de"
+Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
+Example 2:
+
+Input: s = "a)b(c)d"
+Output: "ab(c)d"
+Example 3:
+
+Input: s = "))(("
+Output: ""
+Explanation: An empty string is also valid.
+```
+
 ### [Problem 1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/)
 
 Given the root of a binary tree, return the sum of values of its deepest leaves.
@@ -3347,12 +3378,12 @@ Example 1:
 
 Input: s = "abcabc"
 Output: 10
-Explanation: The substrings containing at least one occurrence of the characters a, b and c are "abc", "abca", "abcab", "abcabc", "bca", "bcab", "bcabc", "cab", "cabc" and "abc" (again). 
+Explanation: The substrings containing at least one occurrence of the characters a, b and c are "abc", "abca", "abcab", "abcabc", "bca", "bcab", "bcabc", "cab", "cabc" and "abc" (again).
 Example 2:
 
 Input: s = "aaacb"
 Output: 3
-Explanation: The substrings containing at least one occurrence of the characters a, b and c are "aaacb", "aacb" and "acb". 
+Explanation: The substrings containing at least one occurrence of the characters a, b and c are "aaacb", "aacb" and "acb".
 Example 3:
 
 Input: s = "abc"
@@ -3598,7 +3629,6 @@ Given a string s and an integer k, return the maximum number of vowel letters in
 
 Vowel letters in English are 'a', 'e', 'i', 'o', and 'u'.
 
-
 ### [Problem 1460. Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/)
 
 You are given two integer arrays of equal length target and arr. In one step, you can select any non-empty subarray of arr and reverse it. You are allowed to make any number of steps.
@@ -3808,6 +3838,7 @@ Output: [[0,5,0],
 ```
 
 ### [Problem 1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)
+
 solution: [problem_1609.py](./problem_1609.py)
 tags: binary tree, bfs
 company: Meta
@@ -3982,7 +4013,6 @@ Given an integer n, return true if it is possible to represent n as the sum of d
 
 An integer y is a power of three if there exists an integer x such that y == 3x.
 
- 
 ```
 Example 1:
 
@@ -4342,7 +4372,7 @@ Explanation: The string is already balanced
 Given an array of strings nums containing n unique binary strings each of length n, return a binary string of length n that does not appear in nums. If there are multiple answers, you may return any of them.
 
 solution: [problem_1980.py](./problem_1980.py)
- 
+
 ```
 Example 1:
 
@@ -4630,7 +4660,7 @@ Example 1:
 
 Input: nums = [9,12,5,10,14,3,10], pivot = 10
 Output: [9,5,3,10,10,12,14]
-Explanation: 
+Explanation:
 The elements 9, 5, and 3 are less than the pivot so they are on the left side of the array.
 The elements 12 and 14 are greater than the pivot so they are on the right side of the array.
 The relative ordering of the elements less than and greater than pivot is also maintained. [9, 5, 3] and [12, 14] are the respective orderings.
@@ -4638,11 +4668,11 @@ Example 2:
 
 Input: nums = [-3,4,3,2], pivot = 2
 Output: [-3,2,4,3]
-Explanation: 
+Explanation:
 The element -3 is less than the pivot so it is on the left side of the array.
 The elements 4 and 3 are greater than the pivot so they are on the right side of the array.
 The relative ordering of the elements less than and greater than pivot is also maintained. [-3] and [4, 3] are the respective orderings.
- 
+
 
 Constraints:
 
@@ -4745,7 +4775,8 @@ The resulting binary tree is shown in the diagram
 ```
 
 ### [Problem 2206. Divide Array Into Equal Pairs] (https://leetcode.com/problems/divide-array-into-equal-pairs/description/)
-You are given an integer array nums consisting of 2 * n integers.
+
+You are given an integer array nums consisting of 2 \* n integers.
 
 You need to divide nums into n pairs such that:
 
@@ -4758,14 +4789,14 @@ Example 1:
 
 Input: nums = [3,2,3,2,2,2]
 Output: true
-Explanation: 
+Explanation:
 There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs.
 If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.
 Example 2:
 
 Input: nums = [1,2,3,4]
 Output: false
-Explanation: 
+Explanation:
 There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.
 ```
 
@@ -4875,7 +4906,7 @@ Input: blocks = "WBBWWBBWBW", k = 7
 Output: 3
 Explanation:
 One way to achieve 7 consecutive black blocks is to recolor the 0th, 3rd, and 4th blocks
-so that blocks = "BBBBBBBWBW". 
+so that blocks = "BBBBBBBWBW".
 It can be shown that there is no way to achieve 7 consecutive black blocks in less than 3 operations.
 Therefore, we return 3.
 Example 2:
@@ -5232,7 +5263,6 @@ Explanation: There exists only one prime number in the given range, so the condi
 
 ### [Problem 2529. Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/)
 
-
 solution: [problem_2529.py](./problem_2529.py)
 
 Given an array nums sorted in non-decreasing order, return the maximum between the number of positive integers and the number of negative integers.
@@ -5257,7 +5287,6 @@ Input: nums = [5,20,66,1314]
 Output: 4
 Explanation: There are 4 positive integers and 0 negative integers. The maximum count among them is 4.
 ```
-
 
 ### [Problem 2554. Maximum Number of Integers to Choose From a Range I](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/)
 
@@ -5415,7 +5444,6 @@ Explanation: There is no path from the top left to the bottom-right cell.
 
 ### [Probelem 2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/)
 
-
 solution: [problem_2579](./problem_2579.py)
 
 There exists an infinitely large two-dimensional grid of uncolored unit cells. You are given a positive integer n, indicating that you must do the following routine for n minutes:
@@ -5434,9 +5462,8 @@ Example 2:
 
 Input: n = 2
 Output: 5
-Explanation: After 2 minutes, there are 4 colored cells on the boundary and 1 in the center, so we return 5. 
+Explanation: After 2 minutes, there are 4 colored cells on the boundary and 1 in the center, so we return 5.
 ```
-
 
 ### [Problem 2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow)
 
@@ -5558,7 +5585,7 @@ The input is generated such that if team a is stronger than team b and team b is
 
 ### [Probelm 2965.Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values)
 
-You are given a 0-indexed 2D integer matrix grid of size n * n with values in the range [1, n2]. Each integer appears exactly once except a which appears twice and b which is missing. The task is to find the repeating and missing numbers a and b.
+You are given a 0-indexed 2D integer matrix grid of size n \* n with values in the range [1, n2]. Each integer appears exactly once except a which appears twice and b which is missing. The task is to find the repeating and missing numbers a and b.
 
 Return a 0-indexed integer array ans of size 2 where ans[0] equals to a and ans[1] equals to b.
 
@@ -5784,7 +5811,7 @@ Explanation:
 There is only one element. So the answer is true.
 ```
 
-### [Problem 3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description) 
+### [Problem 3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description)
 
 You are given a binary array nums.
 
@@ -5819,7 +5846,6 @@ Explanation:
 It is impossible to make all elements equal to 1.
 ```
 
-
 ### [Problem 3208. Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/description/)
 
 solution: [problem_3208](./problem_3208.py)
@@ -5846,6 +5872,7 @@ Input: colors = [1,1,0,1], k = 4
 Output: 0
 Explanation:
 ```
+
 ![](https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-184516.png)
 
 ### [Problem 3217. Delete Nodes From Linked List Present in Array (Medium)](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/)
