@@ -18,7 +18,8 @@ class Solution {
                 }
             }
         }
-        // stack could have unnecessary (
+        // stack could have unnecessary index of "(" after matching with ")"
+        // add them to hashSet for deletion
         while(stack.size > 0){
            hashSet.add(stack.removeLast())
         }
