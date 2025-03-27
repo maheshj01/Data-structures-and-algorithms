@@ -1602,6 +1602,22 @@ Output: 3
 Explanation: The researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations.
 ```
 
+### [Problem 283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Note that you must do this in-place without making a copy of the array.
+
+```
+Example 1:
+
+Input: nums = [0,1,0,3,12]
+Output: [1,3,12,0,0]
+Example 2:
+
+Input: nums = [0]
+Output: [0]
+```
+
 ### [Problem 290. Word Pattern](https://leetcode.com/problems/word-pattern/)
 
 Given a pattern and a string s, find if s follows the same pattern.
