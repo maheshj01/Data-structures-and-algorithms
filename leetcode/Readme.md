@@ -2091,6 +2091,15 @@ Output: true
 Explanation: The string "abc" is a subsequence of "ahbgdc"
 ```
 
+### [Problem 402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
+Given a string num representing a non-negative integer num, and an integer k, return the smallest possible integer after removing k digits from num.
+
+```
+Input: num = "1432219", k = 3
+Output: "1219"
+Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.
+```
+
 ### [Problem 404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
 
 Given the root of a binary tree, return the sum of all left leaves.
