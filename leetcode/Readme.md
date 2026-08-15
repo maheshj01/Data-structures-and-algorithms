@@ -1675,10 +1675,34 @@ Explanation: You are given the second node with value 5, the linked list should 
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
 ```
-
 Input: nums = [1,2,3,4]
 Output: [24,12,8,6]
 Explanation: The array of the products of all other elements is [24,12,8,6]. The product of all the elements of nums is 24. So, for each index i in nums, we have nums[i] = 24 / nums[i].
+```
+
+### [Problem 239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+
+Return the max sliding window.
+
+```
+Example 1:
+
+Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+Output: [3,3,5,5,6,7]
+Explanation: 
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+Example 2:
+
+Input: nums = [1], k = 1
+Output: [1]
 ```
 
 ### [Problem 242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
