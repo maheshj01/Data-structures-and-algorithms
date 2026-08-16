@@ -3151,6 +3151,26 @@ For the last customer, we can not give the change of $15 back because we only ha
 Since not every customer received the correct change, the answer is false
 ```
 
+### [Problem 863. All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
+
+Given the root of a binary tree, the value of a target node target, and an integer k, return an array of the values of all nodes that have a distance k from the target node.
+
+You can return the answer in any order.
+
+Example 1:
+
+```
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2
+Output: [7,4,1]
+Explanation: The nodes that are a distance 2 from the target node (with value 5) have values 7, 4, and 1.
+```
+Example 2:
+
+```
+Input: root = [1], target = 1, k = 3
+Output: []
+```
+
 ### [Problem 874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/?envType=daily-question&envId=2024-09-04)
 
 A robot on an infinite XY-plane starts at point (0, 0) facing north. The robot can receive a sequence of these three possible types of commands:
