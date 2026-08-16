@@ -3915,6 +3915,16 @@ Input: arr = [4,8,2,10], queries = [[2,3],[1,3],[0,0],[0,3]]
 Output: [8,0,4,4
 ```
 
+### [Problem 1315. Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/)
+Given the root of a binary tree, return the sum of values of nodes with an even-valued grandparent. If there are no nodes with an even-valued grandparent, return 0.
+
+A grandparent of a node is the parent of its parent if it exists.
+
+```
+Input: root = [6,7,8,2,7,1,3,9,null,1,4,null,null,null,5]
+Output: 18
+Explanation: The red nodes are the nodes with even-value grandparent while the blue nodes are the even-value grandparents.
+```
 ### [Problem 1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/)
 
 Given 3 positives numbers a, b and c. Return the minimum flips required in some bits of a and b to make ( a OR b == c ). (bitwise OR operation).
