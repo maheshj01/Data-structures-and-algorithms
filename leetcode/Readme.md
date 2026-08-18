@@ -531,6 +531,7 @@ Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index
 ```
 
 ### [Problem 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+
 Company: Meta, Amazon, Microsoft, Google, Tesla
 
 Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
@@ -688,9 +689,8 @@ Each row is sorted in non-decreasing order.
 The first integer of each row is greater than the last integer of the previous row.
 Given an integer target, return true if target is in matrix or false otherwise.
 
-You must write a solution in O(log(m * n)) time complexity.
+You must write a solution in O(log(m \* n)) time complexity.
 
- 
 ![](https://assets.leetcode.com/uploads/2020/10/05/mat.jpg)
 
 ```
@@ -1267,7 +1267,6 @@ Given the sorted rotated array nums of unique elements, return the minimum eleme
 
 You must write an algorithm that runs in O(log n) time.
 
-
 ```
 Example 1:
 
@@ -1283,7 +1282,7 @@ Example 3:
 
 Input: nums = [11,13,15,17]
 Output: 11
-Explanation: The original array was [11,13,15,17] and it was rotated 4 times. 
+Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
 ### [Problem 154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
@@ -1681,6 +1680,7 @@ Explanation: The array of the products of all other elements is [24,12,8,6]. The
 ```
 
 ### [Problem 239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+
 You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
 
 Return the max sliding window.
@@ -1690,7 +1690,7 @@ Example 1:
 
 Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
 Output: [3,3,5,5,6,7]
-Explanation: 
+Explanation:
 Window position                Max
 ---------------               -----
 [1  3  -1] -3  5  3  6  7       3
@@ -1717,7 +1717,8 @@ Explanation: Both s and t contain all the same letters, in the same frequency, s
 ```
 
 ### [Problem 252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
-solution: [problem_@52](./problem_252.py)
+
+solution: [problem_252](./problem_252.py)
 Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings.
 
 ```
@@ -1725,7 +1726,6 @@ Input: intervals = [[0,30],[5,10],[15,20]]
 Output: false
 Explanation: The person cannot attend meetings [0,30] and [5,10] because they overlap.
 ```
-
 
 ### [Problem 257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
 
@@ -1865,6 +1865,7 @@ Output: 1
 ```
 
 ### [Problem 283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 Note that you must do this in-place without making a copy of the array.
@@ -2116,6 +2117,7 @@ Explanation: The string "abc" is a subsequence of "ahbgdc"
 ```
 
 ### [Problem 402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
+
 Given a string num representing a non-negative integer num, and an integer k, return the smallest possible integer after removing k digits from num.
 
 ```
@@ -2184,8 +2186,6 @@ word consists of only lowercase English letters.
 abbr consists of lowercase English letters and digits.
 All the integers in abbr will fit in a 32-bit integer.
 ```
-
-
 ### [Problem 409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
 
 Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
@@ -2608,8 +2608,6 @@ Given a string s, return the number of palindromic substrings in it.
 A string is a palindrome when it reads the same backward as forward.
 
 A substring is a contiguous sequence of characters within the string.
-
- 
 ```
 Example 1:
 
@@ -3164,6 +3162,7 @@ Input: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2
 Output: [7,4,1]
 Explanation: The nodes that are a distance 2 from the target node (with value 5) have values 7, 4, and 1.
 ```
+
 Example 2:
 
 ```
@@ -3440,6 +3439,7 @@ Sort the array so that whenever nums[i] is odd, i is odd, and whenever nums[i] i
 Return any answer array that satisfies this condition.
 
 solution: [Problem 922](./problem_922.kt)
+
 ```
 Example 1:
 
@@ -3563,6 +3563,17 @@ Explanation: There are 7 subarrays with a sum divisible by k = 5:
 [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3
 ```
 
+### [Problem 994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
+
+You are given an m x n grid where each cell can have one of three values:
+
+0 representing an empty cell,
+1 representing a fresh orange, or
+2 representing a rotten orange.
+Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.
+
+Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1
+
 ### [Problem 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
 
 In a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge. If the town judge exists, then:
@@ -3633,7 +3644,7 @@ Example 1:
 
 Input: stones = [2,7,4,1,8,1]
 Output: 1
-Explanation: 
+Explanation:
 We combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,
 we combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,
 we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
@@ -3738,7 +3749,7 @@ Example 1:
 
 Input: root = [1,7,0,7,-8,null,null]
 Output: 2
-Explanation: 
+Explanation:
 Level 1 sum = 1.
 Level 2 sum = 7 + 0 = 7.
 Level 3 sum = 7 + -8 = -1.
@@ -3812,7 +3823,7 @@ You are given two strings s and t of the same length and an integer maxCost.
 You want to change s to t. Changing the ith character of s to ith character of t costs |s[i] - t[i]| (i.e., the absolute difference between the ASCII values of the characters).
 
 Return the maximum length of a substring of s that can be changed to be the same as the corresponding substring of t with a cost less than or equal to maxCost. If there is no substring from s that can be changed to its corresponding substring from t, return 0.
-  
+
 ```
 Example 1:
 
@@ -3843,6 +3854,7 @@ First delete "eee" and "ccc", get "ddbbbdaa"
 Then delete "bbb", get "dddaa"
 Finally delete "ddd", get "aa"
 ```
+
 ### [Problem 1229. Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/)
 
 Given the availability time slots arrays slots1 and slots2 of two people and a meeting duration duration, return the earliest time slot that works for both of them and is of duration duration.
@@ -3936,6 +3948,7 @@ Output: [8,0,4,4
 ```
 
 ### [Problem 1315. Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/)
+
 Given the root of a binary tree, return the sum of values of nodes with an even-valued grandparent. If there are no nodes with an even-valued grandparent, return 0.
 
 A grandparent of a node is the parent of its parent if it exists.
@@ -3945,6 +3958,7 @@ Input: root = [6,7,8,2,7,1,3,9,null,1,4,null,null,null,5]
 Output: 18
 Explanation: The red nodes are the nodes with even-value grandparent while the blue nodes are the even-value grandparents.
 ```
+
 ### [Problem 1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/)
 
 Given 3 positives numbers a, b and c. Return the minimum flips required in some bits of a and b to make ( a OR b == c ). (bitwise OR operation).
@@ -4130,6 +4144,7 @@ stk.pop();                            // return 202 --> Return top of the stack 
 stk.pop();                            // return 201 --> Return top of the stack 201, stack becomes []
 stk.pop();                            // return -1 --> Stack is empty return -1.
 ```
+
 ### [Problem 1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/)
 
 You are given an integer n.
@@ -4224,7 +4239,7 @@ Explanation: No string of words is substring of another string.
 Given an array of integers nums, you start with an initial positive value startValue.
 In each iteration, you calculate the step by step sum of startValue plus elements in nums (from left to right).
 Return the minimum positive value of startValue such that the step by step sum is never less than 1.
- 
+
 ```
 Example 1:
 
@@ -4242,7 +4257,7 @@ Example 2:
 
 Input: nums = [1,2]
 Output: 1
-Explanation: Minimum start value should be positive. 
+Explanation: Minimum start value should be positive.
 Example 3:
 
 Input: nums = [1,-2,-3]
@@ -4259,13 +4274,13 @@ The score after splitting a string is the number of zeros in the left substring 
 Example 1:
 
 Input: s = "011101"
-Output: 5 
-Explanation: 
+Output: 5
+Explanation:
 All possible ways of splitting s into two non-empty substrings are:
-left = "0" and right = "11101", score = 1 + 4 = 5 
-left = "01" and right = "1101", score = 1 + 3 = 4 
-left = "011" and right = "101", score = 1 + 2 = 3 
-left = "0111" and right = "01", score = 1 + 1 = 2 
+left = "0" and right = "11101", score = 1 + 4 = 5
+left = "01" and right = "1101", score = 1 + 3 = 4
+left = "011" and right = "101", score = 1 + 2 = 3
+left = "0111" and right = "01", score = 1 + 1 = 2
 left = "01110" and right = "1", score = 2 + 1 = 3
 Example 2:
 
@@ -5030,7 +5045,7 @@ Example 1:
 
 Input: nums = [0,2,1,5,3,4]
 Output: [0,1,2,4,5,3]
-Explanation: The array ans is built as follows: 
+Explanation: The array ans is built as follows:
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
     = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
     = [0,1,2,4,5,3]
@@ -5442,6 +5457,7 @@ We are also able to place spaces before the first character of the string.
 ```
 
 ### [Problem 2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/description/)
+
 You are given a 0-indexed integer array nums of even length consisting of an equal number of positive and negative integers.
 
 You should return the array of nums such that the the array follows the given conditions:
@@ -5462,7 +5478,7 @@ Output: [3,-2,1,-5,2,-4]
 Explanation:
 The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].
 The only possible way to rearrange them such that they satisfy all conditions is [3,-2,1,-5,2,-4].
-Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.  
+Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.
 Example 2:
 
 Input: nums = [-1,1]
@@ -6412,7 +6428,7 @@ Explanation: Points intersecting at least one car are 1, 2, 3, 5, 6, 7, 8. There
 
 You are given two positive integers low and high.
 
-An integer x consisting of 2 * n digits is symmetric if the sum of the first n digits of x is equal to the sum of the last n digits of x. Numbers with an odd number of digits are never symmetric.
+An integer x consisting of 2 \* n digits is symmetric if the sum of the first n digits of x is equal to the sum of the last n digits of x. Numbers with an odd number of digits are never symmetric.
 
 Return the number of symmetric integers in the range [low, high].
 
@@ -6549,10 +6565,10 @@ Example 2:
 
 Input: nums = [3,4,5]
 Output: "scalene"
-Explanation: 
+Explanation:
 nums[0] + nums[1] = 3 + 4 = 7, which is greater than nums[2] = 5.
 nums[0] + nums[2] = 3 + 5 = 8, which is greater than nums[1] = 4.
-nums[1] + nums[2] = 4 + 5 = 9, which is greater than nums[0] = 3. 
+nums[1] + nums[2] = 4 + 5 = 9, which is greater than nums[0] = 3.
 Since the sum of the two sides is greater than the third side for all three cases, therefore, it can form a triangle.
 As all the sides are of different lengths, it will form a scalene triangle.
 ```
@@ -6723,7 +6739,7 @@ You are given a 2D matrix grid of size m x n. You need to check if each cell gri
 
 - Equal to the cell below it, i.e. grid[i][j] == grid[i + 1][j] (if it exists).
 - Different from the cell to its right, i.e. grid[i][j] != grid[i][j + 1] (if it exists).
-Return true if all the cells satisfy these conditions, otherwise, return false.
+  Return true if all the cells satisfy these conditions, otherwise, return false.
 
 Example 1:
 
@@ -6745,8 +6761,6 @@ Input: grid = [[1],[2],[3]]
 Output: false
 
 Explanation: Cells in the first column have different values.
-
-
 
 ### [Problem 3151. Special Array I (Easy)](https://leetcode.com/problems/special-array-i)
 
@@ -7014,5 +7028,3 @@ Explanation:
 The array already contains distinct elements. Therefore, the answer is 0.
 
 ```
-
-
