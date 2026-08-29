@@ -2186,6 +2186,7 @@ word consists of only lowercase English letters.
 abbr consists of lowercase English letters and digits.
 All the integers in abbr will fit in a 32-bit integer.
 ```
+
 ### [Problem 409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
 
 Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
@@ -2608,6 +2609,7 @@ Given a string s, return the number of palindromic substrings in it.
 A string is a palindrome when it reads the same backward as forward.
 
 A substring is a contiguous sequence of characters within the string.
+
 ```
 Example 1:
 
@@ -3291,13 +3293,37 @@ Output: tru
 ### [Problem 881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)
 
 The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
-Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit.
-Return the minimum number of boats to carry every given person.
+You are given an array people where people[i] is the weight of the ith person, and an infinite number of boats where each boat can carry a maximum weight of limit. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most limit.
+
+Example 1:
+
+```
+Input: people = [1,2], limit = 3
+Output: 1
+Explanation: 1 boat (1, 2)
+```
+
+Example 2:
 
 ```
 Input: people = [3,2,2,1], limit = 3
 Output: 3
-Explanation: 3 boats (1, 2), (2) and (3
+Explanation: 3 boats (1, 2), (2) and (3)
+```
+
+Example 3:
+
+```
+Input: people = [3,5,3,4], limit = 5
+Output: 4
+Explanation: 4 boats (3), (3), (4), (5)
+```
+
+Constraints:
+
+```
+1 <= people.length <= 5 * 104
+1 <= people[i] <= limit <= 3 * 104
 ```
 
 ### [Problem 884. Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/description/)
