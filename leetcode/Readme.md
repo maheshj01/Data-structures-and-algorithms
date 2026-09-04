@@ -3004,6 +3004,24 @@ Explanation: You will start at index 0.
   The total cost is 6
 ```
 
+### [Problem 767. Reorganize String](https://leetcode.com/problems/reorganize-string/)
+
+Given a string s, rearrange the characters of s so that any two adjacent characters are not the same.
+Return any possible rearrangement of s or return "" if not possible.
+
+```
+Example 1:
+Input: s = "aab"
+Output: "aba"
+```
+
+Example 2:
+
+```
+Input: s = "aaab"
+Output: ""
+```
+
 ### [Problem 771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
 
 You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
@@ -4586,7 +4604,6 @@ Given an integer array arr, remove a subarray (can be empty) from arr such that 
 Return the length of the shortest subarray to remove.
 
 > A subarray is a contiguous subsequence of the array.
- 
 
 Example 1:
 
