@@ -22,7 +22,18 @@ There are two types of Dynamic Programming problems
 3. [Climbing Staircase](../leetcode/problem_70.py)
 4. [Min Cost to climb stairs](../leetcode/problem_746.py)
 5. [Counting bits](../leetcode/problem_338.py)
+
+### 1D DP
+
 6. [198. House Robber](../leetcode/problem_198.py)
+
+### 2D DP
+
+7. [1143. Longest Common Subsequence](../leetcode/problem_1143.py)
+
+### Grid DP
+
+8. [62. Unique Paths](../leetcode/problem_62.py)
 
 ### Dynamic Programming Problems by Patterns
 
