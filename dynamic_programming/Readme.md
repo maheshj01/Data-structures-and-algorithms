@@ -26,6 +26,7 @@ There are two types of Dynamic Programming problems
 ### 1D DP
 
 6. [198. House Robber](../leetcode/problem_198.py)
+7. [72. Edit Distance](../leetcode/problem_72.py)
 
 ### 2D DP
 
