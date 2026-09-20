@@ -1675,10 +1675,40 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 Given an array of positive integers nums and a positive integer target, return the minimal length of a contiguous subarray [numsl, numsl+1, ..., numsr-1, numsr] of which the sum is greater than or equal to target. If there is no such subarray, return 0 instead.
 
 ```
-
 Input: target = 7, nums = [2,3,1,2,4,3]
 Output: 2
 Explanation: The subarray [4,3] has the minimal length under the problem constraint.
+```
+
+### [Problem 210. Course Schedule-II]()
+
+There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+
+For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.
+Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.
+
+Example 1:
+
+```
+Input: numCourses = 2, prerequisites = [[1,0]]
+Output: [0,1]
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1].
+```
+
+Example 2:
+
+```
+Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]
+Output: [0,2,1,3]
+Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0.
+So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3].
+
+Example 3:
+
+```
+
+Input: numCourses = 1, prerequisites = []
+Output: [0]
 
 ```
 
@@ -2588,9 +2618,11 @@ Output: [2]
 Given a string s, sort it in decreasing order based on the frequency of characters, and return the sorted string. If there are multiple answers, return any of them.
 
 ```
+
 Input: s = "tree"
 Output: "eert"
 Explanation: 'e' appears twice while 'r' and 't' both appear once. The answer can be "eetr" as well
+
 ```
 
 ### [Problem 463. Island Perimeter](https://leetcode.com/problems/island-perimeter)
@@ -2604,9 +2636,11 @@ The island doesn't have "lakes", meaning the water inside isn't connected to the
 Example 1
 
 ```
+
 Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 Output: 16
 Explanation: The perimeter is the 16 yellow stripes in the image above
+
 ```
 
 ### [Problem 476. Number Complement](https://leetcode.com/problems/number-complement/)
@@ -3271,6 +3305,7 @@ Return the modified image after performing the flood fill.
 ![](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg)
 
 ```
+
 Example 1:
 
 Input: image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2
@@ -3284,6 +3319,7 @@ Input: image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0
 Output: [[0,0,0],[0,0,0]]
 Explanation:
 The starting pixel is already colored with 0, which is the same as the target color. Therefore, no changes are made to the image.
+
 ```
 
 ### [Problem 743. Network Delay](https://leetcode.com/problems/network-delay-time/description/)
@@ -3295,22 +3331,28 @@ We will send a signal from a given node k. Return the minimum time it takes for 
 Example 1:
 
 ```
+
 Input: times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2
 Output: 2
+
 ```
 
 Example 2:
 
 ```
+
 Input: times = [[1,2,1]], n = 2, k = 1
 Output: 1
+
 ```
 
 Example 3:
 
 ```
+
 Input: times = [[1,2,1]], n = 2, k = 2
 Output: -1
+
 ```
 
 ### [Problem 746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
@@ -3320,6 +3362,7 @@ You can either start from the step with index 0, or the step with index 1.
 Return the minimum cost to reach the top of the floor.
 
 ```
+
 Example 1:
 
 Input: cost = [10,15,20]
@@ -3342,6 +3385,7 @@ Explanation: You will start at index 0.
 - Pay 1 and climb two steps to reach index 9.
 - Pay 1 and climb one step to reach the top.
   The total cost is 6
+
 ```
 
 ### [Problem 752.Open the Lock](https://leetcode.com/problems/open-the-lock/)
@@ -3357,32 +3401,40 @@ Given a target representing the value of the wheels that will unlock the lock, r
 Example 1:
 
 ```
+
 Input: deadends = ["0201","0101","0102","1212","2002"], target = "0202"
 Output: 6
+
 ```
 
 Explanation:
 
 ```
+
 A sequence of valid moves would be "0000" -> "1000" -> "1100" -> "1200" -> "1201" -> "1202" -> "0202".
 Note that a sequence like "0000" -> "0001" -> "0002" -> "0102" -> "0202" would be invalid,
 because the wheels of the lock become stuck after the display becomes the dead end "0102".
+
 ```
 
 Example 2:
 
 ```
+
 Input: deadends = ["8888"], target = "0009"
 Output: 1
 Explanation: We can turn the last wheel in reverse to move from "0000" -> "0009".
+
 ```
 
 Example 3:
 
 ```
+
 Input: deadends = ["8887","8889","8878","8898","8788","8988","7888","9888"], target = "8888"
 Output: -1
 Explanation: We cannot reach the target without getting stuck.
+
 ```
 
 ### [Problem 767. Reorganize String](https://leetcode.com/problems/reorganize-string/)
@@ -3391,16 +3443,20 @@ Given a string s, rearrange the characters of s so that any two adjacent charact
 Return any possible rearrangement of s or return "" if not possible.
 
 ```
+
 Example 1:
 Input: s = "aab"
 Output: "aba"
+
 ```
 
 Example 2:
 
 ```
+
 Input: s = "aaab"
 Output: ""
+
 ```
 
 ### [Problem 771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
@@ -3437,11 +3493,13 @@ For every i and j where 0 <= i < j < arr.length, we consider the fraction arr[i]
 Return the kth smallest fraction considered. Return your answer as an array of integers of size 2, where answer[0] == arr[i] and answer[1] == arr[j].
 
 ```
+
 Input: arr = [1,2,3,5], k = 3
 Output: [2,5]
 Explanation: The fractions to be considered in sorted order are:
 1/5, 1/3, 2/5, 1/2, 3/5, and 2/3.
 The third fraction is 2/5.
+
 ```
 
 ### [Problem 787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)
@@ -3451,20 +3509,24 @@ There are n cities connected by some number of flights. You are given an array f
 You are also given three integers src, dst, and k, return the cheapest price from src to dst with at most k stops. If there is no such route, return -1.
 
 ```
+
 Input: n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1
 Output: 700
 Explanation:
 The graph is shown above.
 The optimal path with at most 1 stop from city 0 to 3 is marked in red and has cost 100 + 600 = 700.
 Note that the path through cities [0,1,2,3] is cheaper but is invalid because it uses 2 stops.
+
 ```
 
 ```
+
 Input: n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1
 Output: 200
 Explanation:
 The graph is shown above.
 The optimal path with at most 1 stop from city 0 to 2 is marked in red and has cost 100 + 100 = 200.
+
 ```
 
 ### [Problem 796. Rotate String](https://leetcode.com/problems/rotate-string/)
@@ -5376,6 +5438,7 @@ Level 0: [5]
 Level 1: [4,2]
 Level 2: [3,3,7]
 Node values in level 2 must be in strictly increasing order, so the tree is not Even-Odd.
+
 ```
 
 ### [Problem 1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/description/)
@@ -5389,26 +5452,32 @@ Return the minimum effort required to travel from the top-left cell to the botto
 Example 1
 
 ```
+
 Input: heights = [[1,2,2],[3,8,2],[5,3,5]]
 Output: 2
 Explanation: The route of [1,3,5,3,5] has a maximum absolute difference of 2 in consecutive cells.
 This is better than the route of [1,2,2,2,5], where the maximum absolute difference is 3.
+
 ```
 
 Example 2
 
 ```
+
 Input: heights = [[1,2,3],[3,8,4],[5,3,5]]
 Output: 1
 Explanation: The route of [1,2,3,4,5] has a maximum absolute difference of 1 in consecutive cells, which is better than route [1,3,5,3,5].
+
 ```
 
 Example 3
 
 ```
+
 Input: heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]
 Output: 0
 Explanation: This route does not require any effort.
+
 ```
 
 ### [Problem 1636. Sort Array by Increasing Frequency](https://leetcode.com/problems/sort-array-by-increasing-frequency/)
@@ -6287,6 +6356,7 @@ Input: s = "spacing", spaces = [0,1,2,3,4,5,6]
 Output: " s p a c i n g"
 Explanation:
 We are also able to place spaces before the first character of the string.
+
 ```
 
 ### [Problem 2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
@@ -6300,33 +6370,39 @@ Return a list of all the recipes that you can create. You may return the answer 
 Note that two recipes may contain each other in their ingredients.
 
 ```
+
 Example 1:
 
 Input: recipes = ["bread"], ingredients = [["yeast","flour"]], supplies = ["yeast","flour","corn"]
 Output: ["bread"]
 Explanation:
 We can create "bread" since we have the ingredients "yeast" and "flour"
+
 ```
 
 Example 2:
 
 ```
+
 Input: recipes = ["bread","sandwich"], ingredients = [["yeast","flour"],["bread","meat"]], supplies = ["yeast","flour","meat"]
 Output: ["bread","sandwich"]
 Explanation:
 We can create "bread" since we have the ingredients "yeast" and "flour".
 We can create "sandwich" since we have the ingredient "meat" and can create the ingredient "bread".
+
 ```
 
 Example 3:
 
 ```
+
 Input: recipes = ["bread","sandwich","burger"], ingredients = [["yeast","flour"],["bread","meat"],["sandwich","meat","bread"]], supplies = ["yeast","flour","meat"]
 Output: ["bread","sandwich","burger"]
 Explanation:
 We can create "bread" since we have the ingredients "yeast" and "flour".
 We can create "sandwich" since we have the ingredient "meat" and can create the ingredient "bread".
 We can create "burger" since we have the ingredient "meat" and can create the ingredients "bread" and "sandwich".
+
 ```
 
 ### [Problem 2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/description/)
@@ -7982,30 +8058,37 @@ Note that an empty array is considered to have distinct elements. Return the min
 ```
 
 Example 1:
+
+```
 Input: nums = [1,2,3,4,2,3,3,5,7]
 Output: 2
 Explanation:
 In the first operation, the first 3 elements are removed, resulting in the array [4, 2, 3, 3, 5, 7].
 In the second operation, the next 3 elements are removed, resulting in the array [3, 5, 7], which has distinct elements.
 Therefore, the answer is 2.
+```
 
 Example 2:
+
+```
 Input: nums = [4,5,6,4,4]
 Output: 2
+```
 
+Example 3:
+
+```
 Explanation:
 In the first operation, the first 3 elements are removed, resulting in the array [4, 4].
 In the second operation, all remaining elements are removed, resulting in an empty array.
 Therefore, the answer is 2.
+```
 
-Example 3:
+Example 4:
+
+```
 Input: nums = [6,7,8,9]
 Output: 0
 Explanation:
 The array already contains distinct elements. Therefore, the answer is 0.
-
-```
-
-```
-
 ```

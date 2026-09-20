@@ -498,6 +498,6 @@ Why?
 
 #### Problems
 
-1. [Course Schedule](../../leetcode/problem_2115.py)
+1. [Course Schedule](../../leetcode/problem_207.py)
 2. [Course Schedule-II](../../leetcode/problem_210.py)
 3. [Find All Possible Recipes from Given Supplies](../../leetcode/problem_2115.py)

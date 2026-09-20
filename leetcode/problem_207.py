@@ -34,3 +34,57 @@ class Solution:
             if(not take_course_dfs(course)):
                 return False
         return True
+    
+    
+    
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
+        
+        # 2 -> 3 ->0 -> 1
+
+        # pre-requiste to course
+        # adj = {
+        # 0: [],
+        # 1: [0],
+        # 2: [0, 3]
+        # 3: []
+        # }
+
+                        #    0 <- 1, 0 <- 2, 3 <-2
+        # prerequisites = [[0, 1], [0, 2], [3, 2]]     
+        # course = 4   
+        # courses_completed = 1
+        # node defines a course
+        # course indegree: [1, 0, 1, 0]
+        
+        # elements with in degree 0
+        # DQueue = [3]
+        # current_course = 1
+
+        adj = defaultdict(list)
+        indegree = [0] * numCourses
+        q = deque()
+        courses_completed = 0
+        for course, prereq in prerequisites:
+            adj[prereq].append(course)
+            indegree[course] += 1
+    
+
+        # add courses with 0 dependency to queue
+        for i, in_degree in enumerate(indegree):
+            if(in_degree == 0):
+                q.append(i)
+        
+        # q is empty if there is a cycle
+        while(q):
+            course = q.pop()
+            courses_completed += 1
+            if(courses_completed == numCourses):
+                return True
+            for dependent in adj[course]:
+                indegree[dependent] -=1
+                if(indegree[dependent] == 0):
+                    q.append(dependent)
+
+        return False
+
