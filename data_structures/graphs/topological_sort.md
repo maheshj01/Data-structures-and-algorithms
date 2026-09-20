@@ -484,3 +484,20 @@ processed nodes < total nodes
 > **A node becomes available when all of its prerequisites have been completed.**
 
 That's essentially what `indegree == 0` represents.
+
+### Time complexity
+
+Topological Sort (Kahn's Algorithm)
+
+Time: O(V + E)
+Space: O(V + E)
+
+Why?
+→ Every node processed at most once
+→ Every edge examined once
+
+#### Problems
+
+1. [Course Schedule](../../leetcode/problem_2115.py)
+2. [Course Schedule-II](../../leetcode/problem_210.py)
+3. [Find All Possible Recipes from Given Supplies](../../leetcode/problem_2115.py)
