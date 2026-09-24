@@ -994,9 +994,23 @@ Explanation: The minimum depth is 2
 Given the root of a binary tree and an integer targetSum, return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
 
 ```
-
 Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 2
+```
 
+### [Problem 113. Path Sun II](../leetcode/problem_113.py)
+
+Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where the sum of the node values in the path equals targetSum. Each path should be returned as a list of the node values, not node references.
+
+A root-to-leaf path is a path starting from the root and ending at any leaf node. A leaf is a node with no children.
+
+Example 1
+
+```
+Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
+Output: [[5,4,11,2],[5,8,4,5]]
+Explanation: There are two paths whose sum equals targetSum:
+5 + 4 + 11 + 2 = 22
+5 + 8 + 4 + 5 = 22
 ```
 
 ### [Problem 116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
@@ -1680,7 +1694,7 @@ Output: 2
 Explanation: The subarray [4,3] has the minimal length under the problem constraint.
 ```
 
-### [Problem 210. Course Schedule-II]()
+### [Problem 210. Course Schedule-II](https://leetcode.com/problems/course-schedule-ii)
 
 There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
 
