@@ -1716,14 +1716,13 @@ Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]
 Output: [0,2,1,3]
 Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0.
 So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3].
+```
 
 Example 3:
 
 ```
-
 Input: numCourses = 1, prerequisites = []
 Output: [0]
-
 ```
 
 ### [Problem 215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
@@ -1731,11 +1730,9 @@ Output: [0]
 Given an integer array nums and an integer k, return the kth largest element in the array.
 
 ```
-
 Input: [3,2,1,5,6,4] and k = 2
 Output: 5
 Explanation: The 2nd largest element is 5.
-
 ```
 
 ### [Problem 217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
@@ -8074,35 +8071,45 @@ Note that an empty array is considered to have distinct elements. Return the min
 Example 1:
 
 ```
+
 Input: nums = [1,2,3,4,2,3,3,5,7]
 Output: 2
 Explanation:
 In the first operation, the first 3 elements are removed, resulting in the array [4, 2, 3, 3, 5, 7].
 In the second operation, the next 3 elements are removed, resulting in the array [3, 5, 7], which has distinct elements.
 Therefore, the answer is 2.
+
 ```
 
 Example 2:
 
 ```
+
 Input: nums = [4,5,6,4,4]
 Output: 2
+
 ```
 
 Example 3:
 
 ```
+
 Explanation:
 In the first operation, the first 3 elements are removed, resulting in the array [4, 4].
 In the second operation, all remaining elements are removed, resulting in an empty array.
 Therefore, the answer is 2.
+
 ```
 
 Example 4:
 
 ```
+
 Input: nums = [6,7,8,9]
 Output: 0
 Explanation:
 The array already contains distinct elements. Therefore, the answer is 0.
+
+```
+
 ```
