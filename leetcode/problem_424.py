@@ -36,6 +36,26 @@ class Solution:
                 m = value
         return m
 
+
+class Solution2:
+    def characterReplacement(self, s: str, k: int) -> int:
+        # A A B A B B A = k = 1
+        # a: 1
+        # b: 0
+        freq = defaultdict(int)
+        max_freq = 0
+        result = 0
+        left = 0
+        for right in range(len(s)):
+            freq[s[right]] += 1
+            max_freq = max(freq[s[right]], max_freq)
+            while((right - left + 1) - max_freq > k):
+                freq[s[left]] -= 1 
+                left += 1
+            result = max(right - left + 1, result)
+        return result
+
+
 if __name__ == "__main__":
     s = "AABABBA"
     k = 1
