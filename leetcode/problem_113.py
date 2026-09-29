@@ -8,7 +8,6 @@
 #         self.right = right
 class Solution:
     def pathSum(self, root: TreeNode | None, targetSum: int) -> list[list[int]]:
-        
         # dfs(5, 5, [5])
         # dfs(4, 9,[5, 4])
         # dfs(11, 20, [5, 4, 11])
@@ -28,9 +27,7 @@ class Solution:
             new_path.append(node.val)
             if(not node.left and not node.right and curr_sum == targetSum):
                 result.append(new_path)
-            
             dfs(node.left, curr_sum, new_path)
             dfs(node.right, curr_sum, new_path)
-        
         dfs(root, 0, [])
         return result
