@@ -43,3 +43,26 @@ class Solution:
             max_fruits = max(max_fruits, right - left + 1)
         return max_fruits
 ```
+
+Problem 438.
+
+```python
+class Solution:
+    def findAnagrams(self, s: str, p: str) -> list[int]:
+        s_freq = defaultdict(int)
+        p_freq = Counter(p)
+        left = 0
+        result = []
+        # c b a e b a b a c d
+        # [ 0, ]
+        for right in range(len(s)):
+            s_freq[s[right]] += 1
+            while(right - left + 1 > len(p)):
+                s_freq[s[left]] -= 1
+                if(s_freq[s[left]] == 0):
+                    del s_freq[s[left]]
+                left += 1
+            if(len(s_freq) == len(p_freq) and s_freq == p_freq):
+                result.append(left)
+        return result
+```
