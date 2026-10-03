@@ -17,6 +17,21 @@ class Solution:
         else:
             return False
 
+class Solution2:
+    def canJump(self, nums: list[int]) -> bool:
+        # [2,3,1,1,4]
+        # f(x) = x
+        # [3,3,1,0,4]
+        # reach = (reach + nums[i])
+        reach = 0
+        for i in range(len(nums)):
+            if(i > reach):
+                return False
+            reach = max(reach, i + nums[i])
+            if(reach >= len(nums) - 1):
+                return True
+        return False
+
 # Alternate solution: Take the jump that is greater than current jump
 
 if __name__ == "__main__":
